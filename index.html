@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>특별한 초대</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #a68b5b;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Malgun Gothic', sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .invitation-card {
+            background: white;
+            width: 90%;
+            max-width: 500px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            position: relative;
+        }
+        .border-frame {
+            border: 2px solid var(--accent-color);
+            padding: 20px;
+        }
+        .header {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+        .content {
+            line-height: 1.8;
+            color: #555;
+            margin: 30px 0;
+            word-break: keep-all;
+        }
+        .info-table {
+            width: 100%;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        .info-item {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+        .label {
+            font-weight: bold;
+            color: var(--primary-color);
+            width: 80px;
+        }
+        .btn-map {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn-map:hover {
+            background-color: var(--accent-color);
+        }
+        /* SVG 장식 */
+        .ornament {
+            width: 50px;
+            fill: var(--accent-color);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
 
+<div class="invitation-card">
+    <div class="border-frame">
+        <svg class="ornament" viewBox="0 0 24 24">
+            <path d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z"/>
+        </svg>
+
+        <div class="header">INVITATION</div>
+        <h1>정중히 초대합니다</h1>
+        
+        <div class="content">
+            함께 걸어온 시간을 소중히 여기며,<br>
+            새로운 시작을 앞둔 자리에 교수님을 모시고자 합니다.<br>
+            바쁘시더라도 부디 참석하시어 자리를 빛내주시기 바랍니다.
+        </div>
+
+        <div class="info-table">
+            <div class="info-item">
+                <span class="label">일시</span>
+                <span>2026년 5월 23일(토) 오후 2시</span>
+            </div>
+            <div class="info-item">
+                <span class="label">장소</span>
+                <span>서일대학교 컨벤션홀</span>
+            </div>
+        </div>
+
+        <a href="https://maps.google.com" target="_blank" class="btn-map">오시는 길 확인</a>
+    </div>
+</div>
+
+</body>
+</html>
